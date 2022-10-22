@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grupo G"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toTopOf="@+id/btn_brasil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_brasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="16dp"
+        android:text="Brasil"
+        app:icon="@drawable/br"
+        app:iconTintMode="multiply"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_editor_absoluteY="243dp" />
+
+    <Button
+        android:id="@+id/btn_suica"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="16dp"
+        android:text="Suiça"
+        app:icon="@drawable/ch"
+        app:iconTintMode="multiply"
+        app:layout_constraintTop_toBottomOf="@+id/btn_servia"
+        tools:layout_editor_absoluteX="123dp" />
+
+    <Button
+        android:id="@+id/btn_servia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="8dp"
+        android:text="Sérvia"
+        app:icon="@drawable/rs"
+        app:iconTintMode="multiply"
+        app:layout_constraintTop_toBottomOf="@+id/btn_brasil"
+        tools:layout_editor_absoluteX="123dp" />
+
+    <Button
+        android:id="@+id/btn_camaroes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="12dp"
+        android:text="Camarões"
+        app:icon="@drawable/cm"
+        app:iconTintMode="multiply"
+        app:layout_constraintTop_toBottomOf="@+id/btn_suica"
+        tools:layout_editor_absoluteX="123dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
